@@ -1,0 +1,47 @@
+body {
+    background-color: #005B9A;
+    color: white;
+    font-family: Courier;
+    font-size: 20px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 100px;
+    color: lightskyblue;
+    text-align:center;
+    position: relative;
+    border:10px solid lightskyblue;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    color: lightskyblue;
+    position: relative;
+    background: #204c72;
+    padding: 5px;
+}
+
+p{
+    font-size: 18px;
+    margin: 20px;
+}
+
+li{
+    font-size:16px;
+    list-style-type: square;
+}
+
+img{
+    align-self: center;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+

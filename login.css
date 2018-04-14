@@ -1,0 +1,937 @@
+@charset "utf-8";
+
+/* 登录框
+-------------------------------------------------------------- */
+.lg-form{
+    width: 300px;
+    height: 430px;
+    position: absolute;
+    bottom: 24px;
+    right:184px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+}
+.lg-title{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #999;
+    margin-top: 10px;
+}
+.lg-tab{
+    margin: 0 10px;
+}
+
+.lg-tab .tab-active a{
+    color: #489de7;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #489de7;
+}
+
+.lg-tab_l,.lg-tab_r{
+    float: left;
+    width: 140px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.lg-tab a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 13px;
+    color: #999;
+}
+
+
+
+.lg-tab .active a{
+    font-weight: bold;
+    color: #d01f1f;
+}
+
+.lg-box{
+    padding:0 30px;
+}
+
+.lg-box .msg-wrap{
+    min-height: 20px;
+    height: auto !important;
+    height: 20px;
+    margin:6px 0 4px 0;
+}
+
+.lg-box .msg-error{
+    min-height: 12px;
+    height: auto !important;
+    height: 12px;
+    line-height: 12px;
+    position: relative;
+    padding:3px 10px 3px 30px;
+    border: 1px solid #fac4c4;
+    background:#f7dbdb;
+    color: #d6000f;
+}
+
+.lg-box .msg-error i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) 0 -117px no-repeat;
+}
+
+.lg-box .form-ipt{
+    height: 38px;
+    margin-bottom:24px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.lg-box .form-dynamic{
+    width: 135px;
+    float: left;
+}
+
+.lg-box .form-authcode{
+    float: left;
+}
+
+.lg-box .lg-label{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1;
+    width: 34px;
+    height: 28px;
+    border-right: 1px solid #ddd;
+    background: url(img/login/lg-icon.png) no-repeat;
+}
+
+.lg-box .name-label{
+    background-position: 8px 4px;
+}
+
+.lg-box .pwd-label{
+    background-position: 8px -34px;
+}
+
+.lg-box .authcode-label{
+    background-position: 8px -73px;
+}
+
+.lg-box .ipt {
+    border: 0 none;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px 0 10px 42px;
+    width: 196px;
+}
+
+.lg-box .form-dynamic .ipt{
+    width:92px;
+}
+
+/* start 00*/
+.phone-code{
+    position: relative;
+}
+.lg-form .form-phonecode, .lg-form .send-once{
+    float: left;
+    margin-left: 6px;
+    width: 92px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #72b4ee;
+    background: #eef7ff;
+    color: #72b4ee;
+}
+.lg-form .form-phonecode:hover{
+    border-color: #69a1d3;
+    background: #72b4ee;
+    color: #fff!important;
+}
+.lg-form  .form-phonecode a{
+    display: block;
+    color: #72b4ee;
+}
+.lg-form  .form-phonecode a:hover{
+    color: #fff;
+}
+.lg-form .send-once a{
+    display: block;
+    background: #3a9bf0;
+    color: #fff;
+}
+.lg-form .form-phonecode.disabled, .lg-form .send-once.disabled{
+    cursor: auto;
+    border-color: #ddd;
+    background: #f1f1f1;
+    color: #b3b3b3;
+}
+.lg-form .form-phonecode.disabled a, .lg-form .send-once.disabled a{
+    display: none;
+}
+
+.lg-form .form-phonecode.disabled span, .lg-form .send-once.disabled span{
+    display: block;
+}
+.lg-form .phone-code .msg-correct{
+    position: absolute;
+    top: 8px;
+    left: 246px;
+    width: 136px;
+    height: 24px;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+/* end 00 */
+
+.lg-box .form-btn .submit{
+    width: 100%;
+    height: 40px;
+    line-height: 39px;
+    border: 0 none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: #dc2828;
+
+}
+
+.lg-box .form-btn .submit:hover{
+    background: #c31f1f;
+}
+
+.lg-box .form-btn .regist{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #46a5f8;
+}
+
+.lg-box .form-btn .regist:hover{
+    background: #2086e0;
+}
+
+.lg-box .form-phonecode{
+    float: left;
+    margin-left: 9px;
+    width: 92px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #72b4ee;
+    background: #eef7ff;
+    color: #72b4ee;
+}
+.lg-box .form-phonecode:hover, .form-dynamic-psd .form-phonecode:hover{
+    border-color: #69a1d3;
+    background: #72b4ee;
+    color: #fff;
+}
+
+.lg-box .form-phonecode.disabled, .form-dynamic-psd .form-phonecode.disabled{
+    cursor: auto;
+    border-color: #ddd;
+    background: #f1f1f1;
+    color: #b3b3b3;
+}
+
+.lg-box .form-safe{
+    margin-top: 14px;
+    overflow: hidden;
+}
+
+.lg-box .form-safe .HCcheckbox{
+    float: left;
+    padding-left: 20px;
+    color:#999;
+    position: relative;
+}
+
+.lg-box .form-safe .HCcheckbox,.lg-box .form-safe .HCcheckbox label{
+    cursor: pointer;
+}
+
+.lg-box .form-safe .HCcheckbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin-top:3px;
+    background: url(img/login/lg-icon.png) 0 -148px no-repeat;
+}
+
+.lg-box .form-safe .HCcheckbox label.active{
+    background-position: 0 -177px;
+}
+
+.lg-box .forget-pwd{
+    float: right;
+}
+
+.lg-box .forget-pwd a{
+    color: #999;
+}
+
+.lg-box .forget-pwd a:hover{
+    color: #dc2828;
+}
+
+
+
+/* 找回密码
+-------------------------------------------------------------- */
+.fdPwd-wrap{
+    min-height: 527px;
+    height: auto !important;
+    height: 527px;
+    margin-top: 23px;
+    padding:66px 0;
+    background: #fff;
+}
+
+/*** 找回密码表单 ***/
+
+.fdPwd-form{
+    margin-left: 35%;
+}
+
+.fdPwd-form .form-ipt{
+    width: 318px;
+    height: 38px;
+    float: left;
+    margin-bottom:24px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.fdPwd-form .form-dynamic{
+    width: 214px;
+}
+
+.fdPwd-form .ipt {
+    border: 0 none;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px 0 10px 42px;
+    width: 276px;
+}
+
+.fdPwd-form .form-dynamic .ipt{
+    width: 172px;
+}
+
+.fdPwd-form .lg-label{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1;
+    width: 34px;
+    height: 28px;
+    border-right: 1px solid #ddd;
+    background: url(img/login/lg-icon.png) no-repeat;
+}
+
+.fdPwd-form .name-label{
+    background-position: 8px 4px;
+}
+
+.fdPwd-form .pwd-label{
+    background-position: 8px -34px;
+}
+
+.fdPwd-form .authcode-label{
+    background-position: 8px -73px;
+}
+
+.fdPwd-form .form-authcode{
+    float: left;
+}
+
+
+.fdPwd-form .form-phonecode{
+    float: left;
+    margin-left: 9px;
+    width: 92px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #72b4ee;
+    background: #eef7ff;
+    color: #72b4ee;
+}
+.fdPwd-form .form-phonecode:hover{
+    border-color: #69a1d3;
+    background: #72b4ee;
+    color: #fff;
+}
+
+.fdPwd-form .form-phonecode a{
+    display: block;
+    color: #72b4ee;
+}
+
+.fdPwd-form .form-phonecode a:hover{
+    color: #fff;
+}
+
+.fdPwd-form .form-phonecode span{
+    display: none;
+}
+
+.fdPwd-form .form-phonecode.disabled{
+    cursor: auto;
+    border-color: #ddd;
+    background: #f1f1f1;
+    color: #b3b3b3;
+}
+
+.fdPwd-form .form-phonecode.disabled a{
+    display: none;
+}
+
+.fdPwd-form .form-phonecode.disabled span{
+    display: block;
+}
+
+
+.fdPwd-form .msg-wrap{
+    float: left;
+    margin-left: 20px;
+}
+
+.fdPwd-form .msg-error{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 20px;
+    color: #d6000f;
+}
+
+.fdPwd-form .msg-error i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) 0 -117px no-repeat;
+}
+
+.fdPwd-form .msg-correct {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    color: #46a5f8;
+}
+
+.fdPwd-form .msg-correct i{
+    display: inline-block;
+    margin-top: 13px;
+    padding-right: 10px;
+    width: 11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) -22px -117px no-repeat;
+}
+
+.fdPwd-form .form-tips{
+    margin-top: 30px;
+    padding-left: 24px;
+    font-size: 14px;
+    color: #999;
+}
+
+.fdPwd-form .form-tips .mark{
+    margin:0 10px;
+    color: #d7000f;
+}
+
+.fdPwd-form .form-btn{
+    width: 240px;
+    margin: 12px 0 0 40px;
+}
+
+.fdPwd-form .form-btn .default{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: #fff;
+    background: #46a5f8;
+}
+
+.fdPwd-form .form-btn .default:hover{
+    background: #2086e0;
+}
+
+.fdPwd-form .form-btn .submit{
+    width: 100%;
+    height: 40px;
+    line-height: 39px;
+    border: 0 none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: #dc2828;
+
+}
+
+.fdPwd-form .prompt-success{
+    min-height: 140px;
+    height: auto !important;
+    height: 140px;
+    padding: 50px 0 0 145px;
+    font-size: 20px;
+    color: #666;
+    background: url(img/prompt/prompt-1.png) no-repeat;
+}
+
+
+/* 注册
+-------------------------------------------------------------- */
+.reg-title{
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom:40px;
+    color: #dc2828;
+}
+
+.reg-role{
+    width: 620px;
+    margin: 0 auto;
+}
+
+.reg-role .role-item{
+    width: 210px;
+    cursor:pointer;
+}
+
+.reg-role .role-item .img{
+    width: 210px;
+    height: 210px;
+}
+
+.reg-role .role-student{
+    float: left;
+}
+
+.reg-role .role-teacher{
+    float: right;
+}
+
+.reg-role .role-student .img{
+    background: url(img/login/role-student.png) no-repeat;
+}
+
+.reg-role .role-teacher .img{
+    background: url(img/login/role-teacher.png) no-repeat;
+}
+
+.reg-role .role-item .btn{
+    display: block;
+    width: 155px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin:20px auto 10px auto;
+    font-size: 16px;
+    border-radius: 3px;
+
+}
+
+.reg-role .role-student .btn{
+    border: 1px solid #46a5f8;
+    color: #46a5f8;
+}
+
+.reg-role .role-teacher .btn{
+    border: 1px solid #f89a46;
+    color: #f89a46;
+}
+
+.reg-role .role-item .tip{
+    text-align: center;
+    color: #999;
+}
+
+.reg-role .role-student:hover .img{
+    background: url(img/login/role-student_hover.png) no-repeat;
+}
+
+.reg-role .role-student:hover .btn{
+    background: #46a5f8;
+    color: #fff;
+}
+
+.reg-role .role-teacher:hover .img{
+    background: url(img/login/role-teacher_hover.png) no-repeat;
+}
+
+.reg-role .role-teacher:hover .btn{
+    background: #f89a46;
+    color: #fff;
+}
+
+.reg-role .role-student.disabled .img,.reg-role .role-student.disabled:hover .img{
+    background: url(img/login/role-student_disabled.png) no-repeat;
+}
+
+.reg-role .role-teacher.disabled .img,.reg-role .role-teacher.disabled:hover .img{
+    background: url(img/login/role-teacher_disabled.png) no-repeat;
+}
+
+.reg-role .disabled .btn,.reg-role .disabled:hover .btn{
+    cursor: auto;
+    border-color: #e6e6e6;
+    background: #e6e6e6;
+    color: #999;
+}
+
+/*** 注册表单 ***/
+.reg-form{
+    padding-left: 200px;
+    margin-left: 22%;
+}
+
+.reg-form .form-role{
+    position: absolute;
+    width: 150px;
+    margin-left: -200px;
+}
+
+.reg-form .form-role .img{
+    width: 150px;
+    height: 150px;
+}
+
+.reg-form .form-role .btn{
+    display: block;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin:20px auto 10px auto;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.reg-form .form-role.role-student .img{
+    background: url(img/login/role-student.png) no-repeat;
+    background-size: 150px 150px;
+    -ms-behavior: url(assets/stylebackgroundsize.min.htc);
+    behavior: url(assets/style/backgroundsize.min.htc);
+}
+
+.reg-form .form-role.role-student .btn{
+    border: 1px solid #46a5f8;
+    color: #46a5f8;
+}
+
+.form-role.role-teacher .img{
+    background: url(img/login/role-teacher.png) no-repeat;
+    background-size: 150px 150px;
+    -ms-behavior: url(assets/stylebackgroundsize.min.htc);
+    behavior: url(assets/style/backgroundsize.min.htc);
+}
+
+.reg-form .form-role.role-teacher .btn{
+    border: 1px solid #f89a46;
+    color: #f89a46;
+}
+
+.reg-form .form-role .tip{
+    text-align: center;
+    color: #999;
+}
+
+.reg-form .form-item{
+    margin-bottom: 20px;
+}
+
+.reg-form .form-item .reg-label{
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 9px;
+    border: 1px solid #ddd;
+    background: url(img/login/reg-icon.png) no-repeat;
+}
+
+.reg-form .form-item .name-label{
+    background-position: 10px 10px;
+}
+
+.reg-form .form-item .authcode-label{
+    background-position: 9px -28px;
+}
+
+.reg-form .form-item .pwd-label{
+    background-position: 10px -67px;
+}
+
+.reg-form .form-item .grade-label{
+    background-position: 10px -109px;
+}
+
+.reg-form .form-item .subject-label{
+    background-position: 8px -258px;
+}
+
+.reg-form .form-item .location-label{
+    background-position: 10px -150px;
+}
+
+.reg-form .form-item .field{
+    float: left;
+    width: 314px;
+}
+
+.reg-form .form-item .field-location{
+    width: 390px;
+}
+
+.reg-form .form-item .field-location .st{
+    float: left;
+    margin-right: 14px;
+}
+
+.reg-form .form-item .field-location .st-last{
+    margin: 0;
+}
+
+.reg-form .form-item .ipt{
+    width: 296px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px 8px;
+}
+
+.reg-form .form-item .msg-wrap{
+    float: left;
+    margin-left: 20px;
+}
+
+.reg-form .form-item .msg-error{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 20px;
+    color: #d6000f;
+}
+
+.reg-form .form-item .msg-error i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) 0 -117px no-repeat;
+}
+
+.reg-form .form-item .msg-error a{
+    color: #46a5f8;
+}
+
+.reg-form .form-item .msg-correct i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    background: url(img/login/lg-icon.png) 0 -217px no-repeat;
+}
+
+.reg-form .form-item .msg-correct.small{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 20px;
+    color: #46a5f8;
+}
+
+.reg-form .form-item .msg-correct.small i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) -22px -117px no-repeat;
+}
+
+.reg-form .form-item .field-authcode{
+    width: 214px;
+}
+
+.reg-form .form-item .field-authcode .ipt{
+    width: 196px;
+}
+
+.reg-form .form-phonecode{
+    float: left;
+    margin-left: 6px;
+    width: 92px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #72b4ee;
+    background: #eef7ff;
+    color: #72b4ee;
+}
+
+.reg-form .form-phonecode:hover{
+    border-color: #69a1d3;
+    background: #72b4ee;
+    color: #fff;
+}
+
+.reg-form  .form-phonecode a{
+    display: block;
+    color: #72b4ee;
+}
+
+.reg-form  .form-phonecode a:hover{
+    color: #fff;
+}
+
+.reg-form .form-phonecode.disabled{
+    cursor: auto;
+    border-color: #ddd;
+    background: #f1f1f1;
+    color: #b3b3b3;
+}
+
+.reg-form .form-phonecode.disabled a{
+    display: none;
+}
+
+.reg-form .form-phonecode.disabled span{
+    display: block;
+}
+
+.reg-form .form-authcode{
+    float: left;
+}
+
+.reg-form .form-safe{
+    font-size: 14px;
+    color: #999;
+}
+
+.reg-form .form-safe a{
+    color: #46a5f8;
+}
+
+.reg-form .form-safe a:hover{
+    color:#dc2828;
+}
+
+
+.reg-form .form-safe .HCcheckbox{
+    padding-left: 20px;
+    color:#999;
+    position: relative;
+}
+.reg-form .form-safe .HCcheckbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    margin-top:1px;
+    background: url(img/login/reg-icon.png) 0 -201px no-repeat;
+}
+
+.reg-form .form-safe .HCcheckbox label.active{
+    background-position: 0 -235px;
+}
+
+.reg-form .form-btn{
+    width: 362px;
+    margin-top:40px;
+}
+
+.reg-form .form-btn .default{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: #fff;
+    background: #46a5f8;
+}
+
+.reg-form .form-btn .default:hover{
+    background: #2086e0;
+}
+
+.reg-form .form-btn .submit{
+    width: 100%;
+    height: 40px;
+    line-height: 39px;
+    border: 0 none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: #dc2828;
+
+}
+
+/*
+    *
+    * 响应式
+    *
+*/
+
+@media screen and (max-width:1180px) {
+    .reg-form{
+        margin-left: 5%;
+    }
+}

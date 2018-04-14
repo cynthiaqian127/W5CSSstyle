@@ -1,0 +1,1971 @@
+@charset "utf-8";
+body{
+    background: #eee;
+}
+
+.pageWrap{
+    width: 1180px;
+    margin:0 auto;
+}
+
+.page-layout{
+    min-height: 527px;
+    height: auto !important;
+    height: 527px;
+    margin-top: 23px;
+    padding:66px 0 0;
+    background: #fff;
+}
+
+.reg-page-layout{
+    min-height: 227px;
+    height: auto !important;
+    height: 527px;
+    margin-top: 23px;
+    padding:16px 0;
+    background: #fff;
+}
+
+
+.lg-header{
+    height:92px;
+    border-bottom: 1px solid #d9d9d9;
+    overflow:hidden;
+    background: #fff;
+}
+
+.lg-header .logo{
+    float: left;
+    width: 173px;
+    height: 50px;
+    margin-top:22px;
+    background: url(img/header/logo.png) no-repeat;
+}
+
+.lg-header .welcome{
+    float:left;
+    height:40px;
+    line-height:40px;
+    padding-left:20px;
+    margin-left:20px;
+    margin-top:22px;
+    font-size:26px;
+    border-left:1px solid #ebebeb;
+}
+
+.lg-header .account-login{
+    float: right;
+    font-size: 14px;
+    margin-top: 60px;
+    color: #666;
+}
+
+.lg-header .account-login a{
+    color: #46a5f8;
+}
+
+
+.lg-header .state-login{
+    float: right;
+    margin-top: 30px;
+}
+
+.lg-header .state-login a{
+    float: left;
+    margin-left: 10px;
+}
+
+.lg-header .state-login .user{
+    width: 40px;
+    height: 40px;
+    background: url(img/header/user.png) no-repeat;
+}
+
+.lg-header .state-login .avatar{
+    width: 40px;
+    height: 40px;
+    background: url(img/common/avatar.jpg) no-repeat;
+    background-size: 40px 40px;
+    -ms-behavior: url(assets/stylebackgroundsize.min.htc);
+    behavior: url(assets/style/backgroundsize.min.htc);
+}
+
+.lg-header .state-login .exit{
+    width: 52px;
+    height: 20px;
+    margin-top:10px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+    background: #e4e4e4;
+    color: #999;
+}
+
+.lg-footer{
+    margin-top:40px;
+}
+
+.lg-footer_inner{
+    text-align: center;
+    color:#666;
+}
+
+.lg-footer_inner p{
+    padding-bottom: 18px;
+}
+
+.lg-copyright_links a{
+    color:#666;
+}
+
+.lg-copyright_links a:hover{
+    color:#dc2828;
+}
+
+.lg-copyright_split{
+    margin:0 10px;
+}
+
+.lg-form_wrap{
+    position: relative;
+}
+
+/* 进度
+-------------------------------------------------------------- */
+
+.fdPwd-step{
+    width: 774px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    overflow: hidden;
+}
+
+.fdPwd-step .step{
+    float: left;
+    width: 258px;
+    text-align: center;
+    position: relative;
+}
+
+.fdPwd-step .step .line{
+    position: absolute;
+    left: 0;
+    top:12px;
+    width: 100%;
+    height: 4px;
+    background: #e6e6e6;
+}
+
+.fdPwd-step .step .num{
+    display: block;
+    margin:0 auto;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #e6e6e6;
+    color: #fff;
+}
+
+.fdPwd-step .step .tx{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.fdPwd-step .step.first .line{
+    width: 129px;
+    right: 0;
+    left: auto;
+}
+
+.fdPwd-step .step.last .line{
+    width: 129px;
+    right: auto;
+    left: 0;
+}
+
+.fdPwd-step .step.last .num i{
+    display: block;
+    width: 16px;
+    height: 11px;
+    margin: 8px auto 0 auto;
+    background: url(img/login/lg-icon.png) 0 -277px no-repeat;
+}
+
+.fdPwd-step .step.active .num,.fdPwd-step .step.active .line{
+    background: #dc2828;
+}
+
+.fdPwd-step .step.active .tx{
+    color: #dc2828;
+}
+
+
+.fdPwd-step .step.complete .num,.fdPwd-step .step.complete .line{
+    background: #46a5f8;
+}
+
+.fdPwd-step .step.complete .tx{
+    color: #46a5f8;
+}
+
+
+
+/* 通行证
+-------------------------------------------------------------- */
+/* .pass-prompt{
+	background: #eff7ff;
+    border: 1px solid #eff7ff;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    padding-bottom: 66px;
+} */
+.pass-prompt .main-title{
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.pass-prompt .main-title i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 20px;
+    background: url(img/common/common-icon.png) no-repeat;
+}
+
+.pass-prompt .main-title .mark{
+    margin: 0 5px;
+    color: #d7000f;
+}
+
+.pass-prompt .sub-title{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: #666;
+    width: 672px;
+    min-height: 30px;
+    border: 1px solid #bee1ff;
+    background:url(img/common/binding-note.png) 0 0 #eef7ff no-repeat;
+}
+
+.pass-prompt .sub-title span.sub-title-wrap {
+    display: inline-block;
+    width: 95%;
+    margin-left: 20px;
+}
+
+.width-826{
+    width: 826px !important;
+}
+
+.width-456{
+    width: 456px !important;
+    line-height: 30px !important;
+}
+
+.pass-prompt .sub-title .mark{
+    color: #dc2828;
+}
+
+
+.pass-prompt .pass-explain{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    position: relative;
+}
+
+.pass-prompt .pass-explain img{
+    max-width: 100%;
+    height: auto;
+}
+
+.pass-prompt .pass-explain a{
+    position: absolute;
+    bottom: 32%;
+    right: 30%;
+    font-size: 14px;
+    color: #666;
+}
+
+.pass-prompt .pass-explain-small a{
+    position: absolute;
+    bottom: 124px;
+    right: 230px;
+    font-size: 14px;
+    color: #666;
+}
+
+.pass-prompt .pass-explain a:hover, .pass-prompt .pass-explain-small a:hover{
+    color: #46a5f8;
+}
+
+.pass-prompt .pass-explain_copy{
+    width: 467px;
+    height: 71px;
+    margin: 0 auto;
+    margin-top: -30px;
+    background: url(img/common/pass-explain_copy.png) no-repeat;
+}
+.pass-list{
+    margin: 0 auto;
+    width: 782px;
+}
+.pass-list .item{
+    border-bottom:1px dashed #e5e5e5;
+    margin-top: 40px;
+}
+
+.pass-list .item dt{
+    margin-bottom: 30px;
+}
+
+.pass-list .item dt .title{
+    font-size:20px;
+    font-weight: normal;
+    color:#333;
+    text-align: center;
+}
+
+.pass-list .item dt .left{
+    float: left;
+}
+
+.pass-list .item dt .right{
+    float: right;
+}
+
+.pass-list .item dd{
+    width: 280px;
+    height: 210px;
+    float: left;
+    margin: 0 74px 50px;
+}
+
+.pass-list .item dd:last-child {
+    margin-right: 0;
+}
+
+.pass-list .item .pass-product{
+    position: relative;
+    border:1px solid #78c0ff;
+    border-radius: 5px;
+}
+
+.pass-list .item .fav{
+    position: absolute;
+    right: 4px;
+    top: -4px;
+    width: 33px;
+    height: 31px;
+    cursor: pointer;
+    background: url(img/common/common-icon.png) 0 -225px no-repeat;
+}
+
+.pass-list .item .fav-active .fav{
+    background-position: 0 -174px;
+}
+
+
+.pass-list .item .img{
+    display: block;
+    height: 112px;
+}
+
+.pass-list .item .xk .img{
+    background:#46a5f8 url(img/common/product-xk.png) 10px center no-repeat;
+}
+
+.pass-list .item .st .img{
+    background:#46a5f8 url(img/common/product-st.png) 10px center no-repeat;
+}
+
+.pass-list .item .dy .img{
+    background:#46a5f8 url(img/common/product-dy.png) 10px center no-repeat;
+}
+
+.pass-list .item .sr .img{
+    background:#46a5f8 url(img/common/product-sr.png) 10px center no-repeat;
+}
+
+.pass-list .item .py .img{
+    background:#46a5f8 url(img/common/product-py.png) 10px center no-repeat;
+}
+
+
+.pass-list .item .tx{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    background: url(img/common/product-line.png) repeat-x;
+    color: #333;
+}
+
+.pass-list .item .btn{
+    display: block;
+    margin:20px auto 10px auto;
+    width: 155px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    background: #46a5f8;
+    color: #fff;
+}
+
+.pass-list .item .btn:hover{
+    background: #2086e0;
+}
+
+.pass-list .item .btn span{
+    font-family: \5B8B\4F53;
+    margin-left: 5px;
+}
+
+.pass-list .item .bind{
+    text-align: center;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    color: #333;
+}
+
+.pass-list .item .bind a{
+    color: #46a5f8;
+}
+
+.pass-list .item .bind a:hover{
+    text-decoration: underline;
+}
+
+.pass-list .item .disabled .pass-product{
+    border-color: #cfcfcf;
+}
+
+.pass-list .item .disabled .tx{
+    background: url(img/common/product-line_disabled.png) repeat-x;
+    color: #cfcfcf;
+}
+
+.pass-list .item .disabled .xk .img{
+    background: url(img/common/product-1_disabled.png) center center no-repeat;
+}
+
+.pass-list .item .disabled .st .img{
+    background: url(img/common/product-2_disabled.png) center center no-repeat;
+}
+
+.pass-list .item .disabled .dy .img{
+    background: url(img/common/product-3_disabled.png) center center no-repeat;
+}
+
+.pass-list .item .disabled .sr .img{
+    background: url(img/common/product-4_disabled.png) center center no-repeat;
+}
+
+.pass-list .item .disabled .py .img{
+    background: url(img/common/product-5_disabled.png) center center no-repeat;
+}
+
+.pass-list .item .disabled .btn{
+    background: #cfcfcf;
+    cursor: auto;
+}
+
+.pass-list .item-follow{
+    margin-right: -150px;
+}
+
+.pass-list .item-follow dt{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.pass-list .item-follow dd{
+    float: left;
+    width: 223px;
+    margin-right:150px;
+}
+
+.pass-list .item-follow .img{
+    display: block;
+    width: 223px;
+    height: 223px;
+    position: relative;
+}
+
+.pass-list .item-follow .img i{
+    position: absolute;
+    left: 58px;
+    top: 58px;
+    width: 108px;
+    height: 108px;
+}
+
+.pass-list .item-follow .name{
+    display: block;
+    width: 155px;
+    height: 32px;
+    line-height: 32px;
+    margin:15px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.pass-list .item-follow .tx{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.pass-list .APP-parents{
+    background: url(img/common/APP-parents.png) no-repeat;
+}
+
+.pass-list .APP-teacher{
+    background: url(img/common/APP-teacher.png) no-repeat;
+}
+
+.pass-list .WeChat{
+    background: url(img/common/WeChat.png) no-repeat;
+}
+
+.pass-list .APP-parents i{
+    background: url(img/common/APP-parents_code.png) no-repeat;
+}
+
+.pass-list .APP-teacher i{
+    background: url(img/common/APP-teacher_code.png) no-repeat;
+}
+
+.pass-list .WeChat i{
+    background: url(img/common/WeChat_code.png) no-repeat;
+}
+
+.pass-list .APP-parents .name{
+    background: #e75a62;
+}
+
+.pass-list .APP-teacher .name{
+    background: #eabc5e;
+}
+
+.pass-list .WeChat .name{
+    background: #86b04d;
+}
+
+.pass-list .setFav{
+    font-size: 14px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 76px;
+    color: #666;
+}
+
+.pass-list .setFav i{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: top;
+    margin: 3px 0 0 9px;
+    background: url(img/common/common-icon.png) 0 -70px no-repeat;
+}
+
+.pass-list .setFav.active i{
+    background-position: 0 -103px;
+}
+
+
+
+/* 通行证表单
+-------------------------------------------------------------- */
+.pass-form_wrap{
+    padding: 0 90px;
+}
+
+.pass-form_wrap .title{
+    font-size: 20px;
+    margin: 32px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.pass-form{
+    margin-left: 35%;
+}
+
+.pass-form .form-top_tips{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.pass-form .form-ipt{
+    width: 318px;
+    height: 38px;
+    float: left;
+    margin-bottom:24px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.pass-form .form-dynamic{
+    width: 214px;
+}
+
+.pass-form .ipt {
+    border: 0 none;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px 0 10px 42px;
+    width: 276px;
+}
+
+.pass-form .form-dynamic .ipt{
+    width: 172px;
+}
+
+.pass-form .lg-label{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1;
+    width: 34px;
+    height: 28px;
+    border-right: 1px solid #ddd;
+    background: url(img/login/lg-icon.png) no-repeat;
+}
+
+.pass-form .name-label{
+    background-position: 8px 4px;
+}
+
+.pass-form .pwd-label{
+    background-position: 8px -34px;
+}
+
+.pass-form .authcode-label{
+    background-position: 8px -73px;
+}
+.pass-form .form-authcode{
+    float: left;
+}
+
+.pass-form .form-phonecode{
+    float: left;
+    margin-left: 9px;
+    width: 92px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #72b4ee;
+    background: #eef7ff;
+    color: #72b4ee;
+}
+
+.pass-form .form-phonecode:hover{
+    border-color: #69a1d3;
+    background: #72b4ee;
+    color: #fff;
+}
+
+.pass-form .form-phonecode a{
+    display: block;
+    color: #72b4ee;
+}
+
+.pass-form .form-phonecode a:hover{
+    color: #fff;
+}
+
+.pass-form .form-phonecode span{
+    display: none;
+}
+
+.pass-form .form-phonecode.disabled{
+    cursor: auto;
+    border-color: #ddd;
+    background: #f1f1f1;
+    color: #b3b3b3;
+}
+
+.pass-form .form-phonecode.disabled a{
+    display: none;
+}
+
+.pass-form .form-phonecode.disabled span{
+    display: block;
+}
+
+
+.pass-form .msg-wrap{
+    float: left;
+    margin-left: 20px;
+}
+
+.pass-form .msg-error{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 20px;
+    color: #d6000f;
+}
+
+.pass-form .msg-error i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) 0 -117px no-repeat;
+}
+
+.pass-form .msg-error a{
+    margin:0 3px;
+    color: #46a5f8;
+}
+
+.pass-form .msg-error a:hover{
+    text-decoration: underline;
+}
+
+.pass-form .msg-correct i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    background: url(img/login/lg-icon.png) 0 -217px no-repeat;
+}
+
+.pass-form .msg-correct.small{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 20px;
+    color: #46a5f8;
+}
+
+.pass-form .msg-correct.small i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) -22px -117px no-repeat;
+}
+
+.pass-form .form-tips{
+    margin-top: 30px;
+    padding-left: 24px;
+    font-size: 14px;
+    color: #999;
+}
+
+.pass-form .form-tips .mark{
+    margin:0 10px;
+    color: #d7000f;
+}
+
+.pass-form .form-btn{
+    width: 320px;
+    position: relative;
+}
+
+.pass-form .form-btn .default{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: #fff;
+    background: #46a5f8;
+}
+
+.pass-form .form-btn .default:hover{
+    background: #2086e0;
+}
+
+.pass-form .form-btn .submit{
+    width: 100%;
+    height: 40px;
+    line-height: 39px;
+    border: 0 none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: #dc2828;
+
+}
+
+.pass-form .prompt-success{
+    min-height: 140px;
+    height: auto !important;
+    height: 140px;
+    padding: 50px 0 0 145px;
+    font-size: 20px;
+    color: #666;
+    background: url(img/prompt/prompt-1.png) no-repeat;
+}
+
+.pass-tips{
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 40px;
+    color: #999;
+    text-align: center;
+}
+
+.pass-tips .tip-info{
+    color: #46a5f8;
+}
+
+.pass-skip{
+    margin-left: -250px;
+    margin-right:10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.pass-skip .mark{
+    color: #d7000f;
+}
+
+.pass-skip a{
+    font-size: 16px;
+    margin-left:10px;
+    color: #46a5f8;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+.pass-skip a:hover{
+    text-decoration: underline;
+}
+
+/* 弹出层
+-------------------------------------------------------------- */
+.dialog-layout{
+    display:none;
+    position:absolute;
+    z-index:1002;
+}
+
+.dialog-mark{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:1000px;
+    z-index:1001;
+    background:rgba(0, 0, 0, 0.4)!important;
+    filter:Alpha(opacity=40);
+    background:#000;
+}
+
+/*** 弹出层 绑定账号 ***/
+.dialog-bind{
+    width: 505px;
+    height: 344px;
+    position: relative;
+    border: 1px solid #72b4ee;
+    background: #eef7ff;
+}
+
+.dialog-bind .close{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: url(img/common/common-icon.png) 0 -136px no-repeat;
+}
+
+.dialog-bind .dialog-head{
+    height: 66px;
+    line-height: 66px;
+    margin: 0 10px;
+    border-bottom: 1px solid #e8edf2;
+}
+
+.dialog-bind .dialog-head .title{
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #d01f1f;
+}
+
+.dialog-bind .dialog-form{
+    width: 240px;
+    margin: 0 auto;
+    padding-top:40px;
+}
+.dialog-bind .dialog-form .form-ipt{
+    width: 238px;
+    height: 38px;
+    float: left;
+    margin-bottom: 16px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.dialog-bind .dialog-form .ipt {
+    border: 0 none;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px 0 10px 42px;
+    width: 196px;
+}
+
+.dialog-bind .dialog-form .lg-label{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1;
+    width: 34px;
+    height: 28px;
+    border-right: 1px solid #ddd;
+    background: url(img/login/lg-icon.png) no-repeat;
+}
+
+.dialog-bind .dialog-form .name-label{
+    background-position: 8px 4px;
+}
+
+.dialog-bind .dialog-form .pwd-label{
+    background-position: 8px -34px;
+}
+
+.dialog-bind .dialog-form .msg-wrap{
+    float: left;
+    margin-left: 20px;
+}
+
+.dialog-bind .dialog-form .msg-error{
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    padding-left: 20px;
+    color: #d6000f;
+}
+
+.dialog-bind .dialog-form .msg-error i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) 0 -117px no-repeat;
+}
+
+.dialog-bind .dialog-form .msg-correct i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    background: url(img/login/lg-icon.png) 0 -217px no-repeat;
+}
+
+.dialog-bind .dialog-form .form-btn{
+    width: 240px;
+}
+
+.dialog-bind .dialog-form .form-btn .default{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: #fff;
+    background: #46a5f8;
+}
+
+.dialog-bind .dialog-form .form-btn .default:hover{
+    background: #2086e0;
+}
+
+
+/*** 弹出层 设置喜欢平台 ***/
+.dialog-setFav{
+    width: 984px;
+    height: 473px;
+    border: 4px solid #72b4ee;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+}
+
+.dialog-setFav .dialog-head{
+    padding:36px 40px 0 40px;
+}
+
+.dialog-setFav .dialog-head .title{
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+}
+
+.dialog-setFav .dialog-product{
+    padding:36px 40px 0 40px;
+    margin-right:-20px;
+}
+
+
+
+.dialog-setFav .dialog-product .item{
+    width: 209px;
+    float: left;
+    margin-right:20px;
+    margin-bottom:30px;
+}
+
+.dialog-setFav .dialog-product .item .pass-product{
+    border:1px solid #78c0ff;
+    border-radius: 5px;
+}
+
+.dialog-setFav .dialog-product .item .img{
+    display: block;
+    height: 80px;
+}
+
+.dialog-setFav .dialog-product .item .xk .img{
+    background:#46a5f8 url(img/common/product-xk.png) 10px center no-repeat;
+    background-size: 160px auto;
+    -ms-behavior: url(assets/stylebackgroundsize.min.htc);
+    behavior: url(assets/style/backgroundsize.min.htc);
+}
+
+.dialog-setFav .dialog-product .item .st .img{
+    background:#46a5f8 url(img/common/product-st.png) 10px center no-repeat;
+    background-size: 160px auto;
+    -ms-behavior: url(assets/stylebackgroundsize.min.htc);
+    behavior: url(assets/style/backgroundsize.min.htc);
+}
+
+.dialog-setFav .dialog-product .item .dy .img{
+    background:#46a5f8 url(img/common/product-dy.png) 10px center no-repeat;
+    background-size: 160px auto;
+    -ms-behavior: url(assets/stylebackgroundsize.min.htc);
+    behavior: url(assets/style/backgroundsize.min.htc);
+}
+
+.dialog-setFav .dialog-product .item .sr .img{
+    background:#46a5f8 url(img/common/product-sr.png) 10px center no-repeat;
+    background-size: 160px auto;
+    -ms-behavior: url(assets/stylebackgroundsize.min.htc);
+    behavior: url(assets/style/backgroundsize.min.htc);
+}
+
+.dialog-setFav .dialog-product .item .py .img{
+    background:#46a5f8 url(img/common/product-py.png) 10px center no-repeat;
+    background-size: 160px auto;
+    -ms-behavior: url(assets/stylebackgroundsize.min.htc);
+    behavior: url(assets/style/backgroundsize.min.htc);
+}
+
+.dialog-setFav .dialog-product .item .tx{
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    background: url(img/common/product-line.png) repeat-x;
+    color: #333;
+}
+
+.dialog-setFav .dialog-product .item .btn{
+    display: block;
+    margin:20px auto 10px auto;
+    width: 115px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #fddedd;
+    border-radius: 3px;
+    background: #fff;
+    color: #f65c55;
+}
+
+.dialog-setFav .dialog-product .item .btn.active{
+    color: #fff;
+    background: #f65c55;
+}
+
+.dialog-setFav .dialog-btn{
+    text-align: center;
+}
+
+.dialog-setFav .dialog-btn-inner{
+    display: inline-block;
+}
+
+.dialog-setFav .dialog-btn a{
+    float: left;
+    width: 158px;
+    height: 38px;
+    margin: 0 10px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #46a5f8;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.dialog-setFav .dialog-btn .cancel{
+    color: #46a5f8;
+}
+
+.dialog-setFav .dialog-btn .submit{
+    color: #fff;
+    background: #46a5f8
+}
+
+.dialog-setFav .dialog-tip{
+    padding: 65px 40px 0 40px;
+    font-size: 14px;
+    color: #999;
+}
+
+.dialog-setFav .dialog-tip .mark{
+    color: #46a5f8;
+}
+
+.dialog-setFav .horn{
+    position: absolute;
+    right: 50px;
+    top: -16px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #72b4ee;
+
+}
+
+
+/* 个人资料
+-------------------------------------------------------------- */
+
+.col-layout:after{
+    content:'.';
+    display:block;
+    visibility: hidden;
+    height:0;
+    clear:both;
+}
+
+.col-layout{
+    display:inline-block;
+}
+
+.col-layout{
+    display:block;
+}
+
+.col-layout:{
+    *zoom:1;
+}
+
+.col-layout.mt{
+    margin-top: 20px;
+}
+
+.col-layout .col-side{
+    float: left;
+    position: absolute;
+    width: 220px;
+}
+
+.col-layout .col-main{
+    margin-left: 240px;
+}
+
+.psnl-layout{
+    padding: 20px;
+    min-height: 500px;
+    height: auto !important;
+    height: 500px;
+    background: #fff;
+}
+
+.psnl-sidebar{
+    background: #fff;
+}
+
+.psnl-sidebar .userInfo{
+    padding-top: 36px;
+}
+
+.psnl-sidebar .userInfo .avatar{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.psnl-sidebar .userInfo .avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.psnl-sidebar .userInfo .name{
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+}
+
+.psnl-sidebar .userInfo .name .role{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/*** 侧栏导航 ***/
+.psnl-sidebar .userMenu{
+    padding: 1px;
+}
+
+.psnl-sidebar .userMenu ul{
+    list-style: none;
+}
+
+.psnl-sidebar .userMenu li{
+    position: relative;
+}
+
+.psnl-sidebar .userMenu li a{
+    display: block;
+    height: 39px;
+    line-height: 39px;
+    margin: 0 9px;
+    font-size: 16px;
+    padding-right: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 1px solid #f1f1f1;
+    z-index: 1;
+    color: #666;
+}
+
+.psnl-sidebar .userMenu li a:hover{
+    color: #46a5f8;
+}
+
+.psnl-sidebar .userMenu li a i{
+    float: left;
+    width: 25px;
+    height: 39px;
+    margin: 0 15px 0 12px;
+    background: url(img/personal/userMenu.png) no-repeat;
+}
+
+.psnl-sidebar .userMenu .mu-info a i{
+    background-position: -3px 5px;
+}
+
+.psnl-sidebar .userMenu .mu-pass a i{
+    background-position: -5px -40px;
+}
+
+.psnl-sidebar .userMenu .mu-account a i{
+    background-position: -5px -82px;
+}
+
+.psnl-sidebar .userMenu .mu-pwd a i{
+    background-position: -3px -126px;
+}
+
+.psnl-sidebar .userMenu .mu-avatar a i{
+    background-position: -5px -168px;
+}
+
+.psnl-sidebar .userMenu .mu-info a:hover i{
+    background-position: -43px 5px;
+}
+
+.psnl-sidebar .userMenu .mu-pass a:hover i{
+    background-position: -45px -40px;
+}
+
+.psnl-sidebar .userMenu .mu-account a:hover i{
+    background-position: -45px -82px;
+}
+
+.psnl-sidebar .userMenu .mu-pwd a:hover i{
+    background-position: -43px -126px;
+}
+
+.psnl-sidebar .userMenu .mu-avatar a:hover i{
+    background-position: -45px -168px;
+}
+
+.psnl-sidebar .userMenu .mu-info.active a i{
+    background-position: -83px 5px;
+}
+
+.psnl-sidebar .userMenu .mu-pass.active a i{
+    background-position: -85px -40px;
+}
+
+.psnl-sidebar .userMenu .mu-account.active a i{
+    background-position: -85px -82px;
+}
+
+.psnl-sidebar .userMenu .mu-pwd.active a i{
+    background-position: -83px -126px;
+}
+
+.psnl-sidebar .userMenu .mu-avatar.active a i{
+    background-position: -85px -168px;
+}
+
+
+.psnl-sidebar .userMenu li a b{
+    position: absolute;
+    top: 12px;
+    right: 29px;
+    width: 6px;
+    height: 11px;
+    background: url(img/personal/userMenu-arrow.png) -3px -3px no-repeat;
+}
+
+.psnl-sidebar .userMenu li a:hover b{
+    background-position: -3px -65px;
+}
+
+.psnl-sidebar .userMenu li.active a b{
+    background-position: -3px -34px;
+}
+
+.psnl-sidebar .userMenu li.active .bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 214px;
+    height: 39px;
+    border-left: 4px solid #46a5f8;
+    background: #7dc0fa;
+}
+
+.psnl-sidebar .userMenu li.active a{
+    color: #fff;
+}
+
+
+/*** 主体 ***/
+.psnl-breadCrumb{
+    height: 36px;
+    line-height: 36px;
+    padding-left: 20px;
+    border-bottom: 2px solid #46a5f8;
+    margin-bottom: 30px;
+}
+
+.psnl-breadCrumb h2{
+    float: left;
+    font-weight: normal;
+    color: #46a5f8;
+}
+
+.psnl-breadCrumb h2 i{
+    float: left;
+    width: 25px;
+    height: 36px;
+    margin-right: 10px;
+    background: url(img/personal/userMenu.png) no-repeat;
+}
+
+
+.psnl-breadCrumb h2.bar-info i{
+    background-position: -43px 2px;
+}
+
+.psnl-breadCrumb h2.bar-pass i{
+    background-position: -45px -42px;
+}
+
+.psnl-breadCrumb h2.bar-account i{
+    background-position: -45px -84px;
+}
+
+.psnl-breadCrumb h2.bar-pwd i{
+    background-position: -43px -128px;
+}
+
+.psnl-breadCrumb h2.bar-avatar i{
+    background-position: -45px -170px;
+}
+
+
+/*** 个人资料表单 ***/
+.psnl-form{
+    margin-top: 30px;
+}
+
+.psnl-form .form-item{
+    min-height: 40px;
+    height: auto !important;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #999;
+}
+
+.psnl-form .label{
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 11px 0;
+    width: 160px;
+    padding-right: 10px;
+    text-align: right;
+}
+.userMenu sup,.form-item sup,.pass-prompt .sub-title sup{
+    line-height: 10px;
+}
+.psnl-form .ctnr{
+    float: left;
+}
+
+.psnl-form .ipt{
+    border: 0 none;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 218px;
+}
+
+.psnl-form .ipt-l{
+    width: 360px;
+}
+
+.psnl-form .select-wrap .st{
+    float: left;
+    margin-right: 14px;
+}
+
+.mt16{
+    margin-top: 16px;
+}
+
+
+.psnl-form .msg-wrap{
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.psnl-form .msg-error{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 20px;
+    color: #d6000f;
+}
+
+.psnl-form .msg-error i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) 0 -117px no-repeat;
+}
+
+.psnl-form .msg-error a{
+    margin:0 3px;
+    color: #46a5f8;
+}
+
+.psnl-form .msg-error a:hover{
+    text-decoration: underline;
+}
+
+.psnl-form .msg-correct i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    background: url(img/login/lg-icon.png) 0 -217px no-repeat;
+}
+
+.psnl-form .msg-correct.small{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 20px;
+    color: #46a5f8;
+}
+
+.psnl-form .msg-correct.small i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width:11px;
+    height: 11px;
+    background: url(img/login/lg-icon.png) -22px -117px no-repeat;
+}
+
+
+.psnl-form .HCradio{
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.psnl-form .form-oper{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    padding: 0 10px;
+    border: 1px solid #ef4c44;
+    border-radius: 3px;
+    background: #f65c55;
+    color: #fff;
+}
+
+.psnl-form .form-btn{
+    width: 240px;
+    margin: 40px auto;
+}
+
+.psnl-form .form-btn .default{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: #fff;
+    background: #46a5f8;
+}
+
+.psnl-form .form-btn .default:hover{
+    background: #2086e0;
+}
+
+.psnl-avatar{
+    width: 366px;
+    margin: 30px auto;
+}
+
+.avatar_upload-wrap {
+    position: relative;
+    margin-bottom: 30px;
+}
+.avatar_upload-wrap .tips {
+    color: #a1a1a1;
+    position: absolute;
+    bottom: 2px;
+    left: 88px;
+}
+.editAvtBox {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+}
+.editAvtBox img {
+    width: 150px;
+    height: 150px;
+}
+.psnl-avatar .oper{
+    font-size: 14px;
+    color: #999;
+}
+
+.psnl-avatar .oper a{
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    vertical-align:bottom;
+    margin-right: 5px;
+    border-radius: 3px;
+    background: #7dc0fa;
+    color: #fff;
+}
+
+.psnl-avatar .oper input{
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:1;
+    height:37px;
+    -moz-opacity:0;
+    opacity:0;
+    filter:alpha(opacity=0);cursor:pointer;
+}
+
+.psnl-avatar .img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 34px auto;
+}
+
+.psnl-avatar .img{
+    width: 150px;
+    height: 150px;
+}
+
+.psnl-avatar .img img{
+    width: 150px;
+    height: 150px;
+}
+
+.psnl-avatar .btn{
+    width: 240px;
+    margin: 0 auto;
+}
+
+.psnl-avatar .btn .default{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: #fff;
+    background: #7dc0fa;
+}
+
+.psnl-avatar .btn .default:hover {
+    background: #46a5f8;
+}
+
+
+.HCradio{
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+.HCradio label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    margin-top:3px;
+    cursor: pointer;
+    background: url(img/common/radio.png) 0 -5px no-repeat;
+}
+
+.HCradio label.active{
+    background-position: 0 -39px;
+}
+
+.pass-form_wrap.psnl{
+    padding: 30px 20px 0 20px;
+}
+
+.pass-form_wrap.psnl .pass-form{
+    margin-left: 31%;
+}
+
+.pass-box.psnl .pass-list{
+    padding: 30px 20px;
+    margin-right: -23px;
+}
+
+.pass-box.psnl .pass-list .setFav{
+    margin-right: 23px;
+}
+
+.pass-box.psnl .pass-list .item dd{
+    margin:0 70px 70px 0;
+    width: 296px;
+}
+
+
+/* 文档&&协议
+-------------------------------------------------------------- */
+.doc-agreement .doc-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #d7000f;
+}
+
+.doc-agreement .doc-content{
+    padding: 0 95px;
+    font-size: 14px;
+    line-height: 42px;
+    color: #666;
+}
+
+.doc-explain{
+    padding: 0 95px;
+    font-size:14px;
+    line-height: 42px;
+    color: #666;
+}
+
+.doc-explain h3{
+    margin-bottom: 10px;
+}
+
+.doc-explain .Q,.doc-explain .A{
+    padding-left: 40px;
+}
+
+.doc-explain .Q{
+    background: url(img/common/Q.png) 0 9px no-repeat;
+}
+
+.doc-explain .A{
+    margin-bottom: 15px;
+    background: url(img/common/A.png) 0 9px no-repeat;
+}
+
+.doc-explain sup{
+    line-height: 10px;
+}
+
+
+
+
+
+
+
+
+/*
+    *
+    * 响应式
+    *
+*/
+
+@media screen and (max-width:1180px) {
+    .pageWrap{
+        width: 990px;
+    }
+
+    .pass-list{
+        margin: 0;
+        padding: 0 54px;
+    }
+
+    .pass-list .item dd{
+        margin-right:24px;
+        margin-left: 0;
+    }
+
+    .pass-list .item dd:last-child {
+        margin-right: 0;
+    }
+
+    .pass-list .setFav{
+        margin-right: 22px;
+    }
+
+    .dialog-setFav{
+        width: 900px;
+    }
+
+    .dialog-setFav .dialog-head{
+        padding:36px 20px 0 20px;
+    }
+
+    .dialog-setFav .dialog-product{
+        padding:36px 20px 0 20px;
+    }
+
+    .dialog-setFav .dialog-product .item{
+        margin-right: 10px;
+    }
+
+    .pass-form_wrap.psnl .pass-form{
+        margin-left: 10%;
+    }
+
+    .pass-box.psnl .pass-list .item dd{
+        margin: 0 20px 50px 20px;
+    }
+
+    .psnl-form .label {
+        width: 94px;
+    }
+
+    .psnl-layout {
+        width: 500px;
+    }
+
+    .psnl .pass-list {
+        width: 500px;
+    }
+
+    .pass-prompt .pass-explain a {
+        bottom: 29%;
+    }
+    .pass-prompt .sub-title {
+        width: 426px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .pageWrap{
+        width: 700px;
+    }
+}
+
+/*  弹窗样式 start */
+.main-content{
+    width: 100%;
+    height: 600px;
+    background: cyan;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    left:0;
+    top: 0;
+    font-size: 14px;
+    color: #666;
+    z-index: 999;
+}
+.modal .modal-content{
+    background: #eef7ff;
+    width: 562px;
+    height: 402px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -201px;
+    margin-left: -281px;
+}
+
+.modal-content .btn-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    background: url(img/dialog/btn-close.png) top left no-repeat;
+    cursor: pointer;
+}
+.modal-content .btn-close:hover{
+    background-position-x: -88px;
+}
+.mobile-binded{
+    background: url(img/dialog/mobile-binded.png) #eef7ff center top no-repeat;
+    height: 162px;
+}
+.modal .bind-advice{
+    border-top: 2px dotted #46a5f8;
+    padding: 20px;
+}
+.modal .bind-advice p{
+    line-height: 28px;
+}
+.modal .bind-advice .bind-tips{
+    text-indent: 28px;
+}
+.modal .bind-btn{
+    text-align: center;
+    margin-top: 20px;
+}
+.modal .btn{
+    padding: 12px 40px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal .btn-info{
+    background: #46a5f8;
+}
+.modal .btn-info:hover{
+    background: #2086e0;
+}
+.modal .bind-info{
+    width: 100%;
+    height: 200px;
+    margin-left: 20px;
+}
+.modal .bind-success-img{
+    background: url(img/dialog/bind-success.png) 10px center no-repeat;
+    width: 124px;
+    height: 100%;
+    float:left;
+    margin-right: 30px;
+}
+.modal .bind-success-info{
+    float: left;
+    width: 328px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.h324{
+    height: 324px!important;
+}
+.modal .bind-success-info .info-title{
+    color: #46a5f8;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/*  弹窗样式 end */
